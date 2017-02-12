@@ -31,3 +31,36 @@ Add HD to fstab
 
 - Install Hyper.app or use existing Terminal
 - SSH in and install node and svalbard
+
+
+## Alternative Hardware
+
+Here are devices we tested but for various reasons weren't as good of a fit as the Compute Stick, though YMMV and suggestions are always welcome as the DataSilo is a very hackable, DIY concept.
+
+## Banana Pi M1
+
+$40
+
+MicroSD
+http://www.banana-pi.org/m1-download.html Ubuntu Mate 16.04
+Limitations: Slow CPU encryption
+
+## ODROID XU4
+
+$80
+
+http://odroid.in/ubuntu_16.04lts/ubuntu-16.04-mate-odroid-x2-20160920.img.xz Ubuntu Mate 16.04
+
+Limitations: Loud Fan, slow CPU encryption
+
+## Raspberry Pi
+
+$30
+
+Limitations: 100Mb Ethernet, USB2, slow CPU encryption
+
+## Intel NUC
+
+~$200 and up
+
+Limitations: Many kits barebones (requires more setup), expensive, but speed/performance was good. A great option for a more general purpose machine, but Compute Stick is same thing in smaller, more limited but cheaper package.
