@@ -17,6 +17,8 @@ You can use any hardware but these are ones that we've tested and work great:
 - [Hard Drive: WD MyBook Duo 16TB (~$499)](https://www.amazon.com/gp/product/B01B6BN1CU/ref=as_li_tl?ie=UTF8&tag=datproject-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01B6BN1CU&linkId=0e7415c88239907dba15a73be9ef6fb4)
 - (Optional) [Anker USB3/Gigabit Ethernet Hub ($25)](https://www.amazon.com/gp/product/B014ZOJX7W/ref=as_li_tl?ie=UTF8&tag=datproject-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B014ZOJX7W&linkId=73bc96dfe36120b60846299d07d689d7)
 
+If you're in Canada here's the best link we've found for the compute stick: http://www.ncix.com/detail/intel-compute-stick-stk1aw32sc-atom-6e-134117.htm
+
 ## Running Ubuntu on the Compute Stick
 
 Download Image: http://www.linuxium.com.au/how-tos/runningubuntuontheintelcomputestick
