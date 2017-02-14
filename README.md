@@ -2,7 +2,11 @@
 
 Build a home server that adds high speed storage and upload capacity to a global volunteer science network
 
-**Work in progress**
+**Work in progress!**
+
+If you want to build a DataSilo, you can use your own hardware or use our recommended hardware below!
+
+If you are ready to run the software, hold on for a little while and keep an eye on [svalbard](https://github.com/datproject/svalbard), which is currently being worked on!
 
 ## Recommended Parts List
 
@@ -29,9 +33,7 @@ Add HD to fstab
 
 ## Running `svalbard` on your server
 
-- Install Hyper.app or use existing Terminal
-- SSH in and install node and svalbard
-
+See https://github.com/datproject/svalbard for instructions
 
 ## Alternative Hardware
 
