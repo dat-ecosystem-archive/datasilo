@@ -39,6 +39,20 @@ See https://github.com/datproject/svalbard for instructions
 
 Here are devices we tested but for various reasons weren't as good of a fit as the Compute Stick, though YMMV and suggestions are always welcome as the DataSilo is a very hackable, DIY concept.
 
+## NAS Boxes
+
+If you have a NAS you can use it! But buying a full NAS might be a little overkill if you are just using your computer solely as a DataSilo.
+
+Requirements are:
+
+- Has gigabit ethernet
+- Runs Linux and Dat (`npm install dat -g`), we use libsodium and leveldb native modules
+- Allows JBOD (RAID is not needed with Svalbard/DataSilo as Dat acts as an internet-level RAID)
+
+## Mediasonic Probox Enclosure
+
+These are a great way to get a 4 drive JBOD bay (non-RAID). I actually have 2 of them (8 drives total, with 4TB drives). But compared to the 16TB MyBook Duo the price for these wasn't worth it! But could be a great option if you have existing drives you want to use.
+
 ## Banana Pi M1
 
 $40
@@ -66,3 +80,4 @@ Limitations: 100Mb Ethernet, USB2, slow CPU encryption
 ~$200 and up
 
 Limitations: Many kits barebones (requires more setup), expensive, but speed/performance was good. A great option for a more general purpose machine, but Compute Stick is same thing in smaller, more limited but cheaper package.
+
