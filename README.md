@@ -33,6 +33,36 @@ Helpful Youtube: https://www.youtube.com/watch?v=KAMcr2vbOsA
 
 Add HD to fstab
 
+## Setting up the external hard drive
+
+These instructions are for MyBook or MyBook DUO
+
+1. install WD Drive Utilities on Mac OS
+2. convert to JBOD/EXFAT and turn off Drive Sleep
+3. plug into linux
+
+```
+lsblk # to view drives and get the /dev/sd<num> entries
+sudo parted /dev/sd<num>
+print
+rm 1 (and others)
+mklabel gpt
+unit TB
+mkpart primary 0.00TB 8.00TB
+print
+quit
+```
+
+Change `8.00TB` above to match the drive size depending on which drive you got
+
+then `sudo mkfs.ext4 /dev/sd<num>` and use the UUID to generate fstab entries:
+
+```
+UUID=<UUIDHERE> /media/hd1 ext4 defaults 0 0
+```
+
+then `sudo mount -a` to reload fstab and mount (mkdir your mountpoints first)
+
 ## Running `svalbard` on your server
 
 See https://github.com/datproject/svalbard for instructions
