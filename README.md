@@ -32,7 +32,7 @@ The Compute Stick comes with Windows. You can choose to use Windows if you prefe
 
 - Download Image: http://www.linuxium.com.au/how-tos/runningubuntuontheintelcomputestick
 - Use Etcher to put it on a USB Flash Drive: http://etcher.io/
-- Boot from USB Stick on Compute Stick using F10 at startup.
+- Boot from USB Stick on Compute Stick using F10 at startup. (You may need to configure the compute stick to boot in Windows 64 mode, which is done by configuring the BIOS using F2 at startup)
 - Choose 'Install Ubuntu' and follow instructions to dual boot Windows with a 10GB split partition.
 
 Helpful Youtube: https://www.youtube.com/watch?v=KAMcr2vbOsA
