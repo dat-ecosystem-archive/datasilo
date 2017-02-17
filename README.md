@@ -72,6 +72,16 @@ then `sudo mount -a` to reload fstab and mount (mkdir your mountpoints first)
 NOTE Svalbard is still under construction. If you are an early adopter and here already, try seeding this dat (9GB of [White House Open Datasets](https://twitter.com/denormalize/status/831581871230193664)):
 
 ```
+# install node https://github.com/nodesource/distributions#deb
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# set npm prefix https://docs.npmjs.com/getting-started/fixing-npm-permissions
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+# add to ~/.profile: export PATH=~/.npm-global/bin:$PATH
+
+# install dat and download the data
 npm install dat -g
 dat clone 6fa91405f280c30cedd461dfcd3b4fffffb27759e26f8135b7cbdfe08870ccb2 eop-gov
 cd eop-gov
