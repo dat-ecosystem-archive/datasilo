@@ -45,6 +45,8 @@ These instructions are for MyBook or MyBook DUO
 2. convert to JBOD/EXFAT and turn off Drive Sleep
 3. plug into linux
 
+The next phase uses `parted` to remove the existing JBOD/ExFAT partitions on the new drive and create an ext4 partition. First we'll find out what the block device name is (usually `/dev/sda` or `/dev/sdb`, `/dev/sd1`, `/dev/sd2`, or the like), then we'll remove the existing partitions.
+
 ```
 lsblk # to view drives and get the /dev/sd<num> entries
 sudo parted /dev/sd<num>
@@ -59,13 +61,21 @@ quit
 
 Change `8.00TB` above to match the drive size depending on which drive you got
 
-then `sudo mkfs.ext4 /dev/sd<num>` and use the UUID to generate fstab entries:
+Now we create a new ext4 filesystem: `sudo mkfs.ext4 /dev/sd<num>`.
+
+Create a mount point for the drive, e.g.
+
+```
+mkdir -p /media/hd1
+```
+
+Find the UUID of the newly created filesystem with `ls -l /dev/disk/by-uuid/` and use it to add the appropriate entry in `/etc/fstab`:
 
 ```
 UUID=<UUIDHERE> /media/hd1 ext4 defaults 0 0
 ```
 
-then `sudo mount -a` to reload fstab and mount (mkdir your mountpoints first)
+finally `sudo mount -a` to reload fstab and mount the new disk.  `df -H` should now show you a new big drive.
 
 ## Running `svalbard` on your server
 
