@@ -19,6 +19,13 @@ You can use any hardware but these are ones that we've tested and work great:
 
 If you're in Canada here's the best link we've found for the compute stick: http://www.ncix.com/detail/intel-compute-stick-stk1aw32sc-atom-6e-134117.htm
 
+Additionally to set it up you will need:
+
+- USB Thumb Drive (Compute Stick can't boot from SD Card Slot so must be USB)
+- Second computer to flash the USB thumb drive with Ubuntu
+- USB or Bluetooth Keyboard + Mouse
+- Display with HDMI input
+
 ## Running Ubuntu on the Compute Stick
 
 The Compute Stick comes with Windows. You can choose to use Windows if you prefer, the Svalbard software *should* run on it (check the Svalbard readme first, work in progress). You can also dual-boot Ubuntu pretty easily.
