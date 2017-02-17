@@ -21,17 +21,21 @@ If you're in Canada here's the best link we've found for the compute stick: http
 
 ## Running Ubuntu on the Compute Stick
 
-Download Image: http://www.linuxium.com.au/how-tos/runningubuntuontheintelcomputestick
+The Compute Stick comes with Windows. You can choose to use Windows if you prefer, the Svalbard software *should* run on it (check the Svalbard readme first, work in progress). You can also dual-boot Ubuntu pretty easily.
 
-TODO have pre-baked image
+### Known issues
 
-Use Etcher to put it on a USB Flash Drive: http://etcher.io/
+- Sandisk branded SD cards don't work under Ubuntu
+- Sometimes randonly when booting the ubuntu bootloader hangs on a purple screen and requires a power cycle
 
-Install Ubuntu in a 10GB split partition.
+## Dual boot instructions
+
+- Download Image: http://www.linuxium.com.au/how-tos/runningubuntuontheintelcomputestick
+- Use Etcher to put it on a USB Flash Drive: http://etcher.io/
+- Boot from USB Stick on Compute Stick using F10 at startup.
+- Choose 'Install Ubuntu' and follow instructions to dual boot Windows with a 10GB split partition.
 
 Helpful Youtube: https://www.youtube.com/watch?v=KAMcr2vbOsA
-
-Add HD to fstab
 
 ## Setting up the external hard drive
 
@@ -65,7 +69,16 @@ then `sudo mount -a` to reload fstab and mount (mkdir your mountpoints first)
 
 ## Running `svalbard` on your server
 
-See https://github.com/datproject/svalbard for instructions
+NOTE Svalbard is still under construction. If you are an early adopter and here already, try seeding this dat (9GB of [White House Open Datasets](https://twitter.com/denormalize/status/831581871230193664)):
+
+```
+npm install dat -g
+dat clone 6fa91405f280c30cedd461dfcd3b4fffffb27759e26f8135b7cbdfe08870ccb2 eop-gov
+cd eop-gov
+dat sync # to seed
+```
+
+See https://github.com/datproject/svalbard for instructions when svalbard is ready
 
 ## Alternative Hardware
 
