@@ -67,6 +67,14 @@ UUID=<UUIDHERE> /media/hd1 ext4 defaults 0 0
 
 then `sudo mount -a` to reload fstab and mount (mkdir your mountpoints first)
 
+## Installing `node`
+
+On mac, we recommend using [Homebrew](https://brew.sh/): `brew install node`
+
+On linux use the [package manager](https://nodejs.org/en/download/package-manager/) you prefer
+
+On Windows use the [MSI installer](https://nodejs.org/en/download/)
+
 ## Running `svalbard` on your server
 
 NOTE Svalbard is still under construction. If you are an early adopter and here already, try seeding this dat (9GB of [White House Open Datasets](https://twitter.com/denormalize/status/831581871230193664)):
